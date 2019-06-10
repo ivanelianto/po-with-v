@@ -1,0 +1,64 @@
+.menu
+{   
+    display: flex;
+    align-items: center;
+}
+
+.menu .has-dropdown
+{
+    position: relative;
+}
+
+.menu .has-dropdown ul
+{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+}
+
+.menu .has-dropdown ul .menu-item
+{
+    justify-content: flex-start;
+}
+
+.menu .has-dropdown:hover .hoverable
+{
+    display: block;
+}
+
+.menu-item
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+    width: 10em;
+}
+
+.menu-item:not(:last-child)
+{
+    margin-right: 1em;
+}
+
+.menu-item a
+{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.menu-item:hover
+{
+    background-color: #ff0;
+}
+
+.dropdown-menu
+{
+
+}
+
+.dropdown-menu .hoverable
+{
+
+}
