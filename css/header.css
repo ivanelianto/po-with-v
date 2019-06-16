@@ -1,16 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Pacifico&display=swap");
-header {
-  background-color: #fff;
-  padding: 1em 0em;
-  -webkit-box-shadow: 0 0 1em #ddd;
-          box-shadow: 0 0 1em #ddd;
-}
-
-header .container .row {
-  margin-bottom: 0;
-}
-
-/* Start Logo Section */
 .logo-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -37,12 +25,27 @@ header .container .row {
   -webkit-text-fill-color: transparent;
 }
 
-/* End Logo Section */
+header {
+  background-color: #fff;
+  padding: 1em 0em;
+  -webkit-box-shadow: 0 0 1em #ddd;
+          box-shadow: 0 0 1em #ddd;
+  position: fixed;
+  width: 100%;
+}
+
+header .container .row {
+  margin-bottom: 0;
+}
+
 /* Start Menu Section */
 .menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -88,12 +91,8 @@ header .container .row {
   transition: all .2s ease-in-out;
 }
 
-.menu .menu-item:not(:last-child) {
-  margin-right: 1em;
-}
-
 .menu .menu-item:hover {
-  color: #FFAB66;
+  color: #facf80;
   cursor: pointer;
 }
 

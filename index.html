@@ -1,61 +1,228 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Welcome</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
-	<link rel="stylesheet" type="text/css" href="./css/general.css">
-	<link rel="stylesheet" type="text/css" href="./css/grid.css">
-	<link rel="stylesheet" type="text/css" href="./css/header.css">
-	<link rel="stylesheet" type="text/css" href="./css/index.css">
-</head>
+  <head>
+    <title>Welcome</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="./css/general.css" />
+    <link rel="stylesheet" type="text/css" href="./css/grid.css" />
+    <link rel="stylesheet" type="text/css" href="./css/header.css" />
+    <link rel="stylesheet" type="text/css" href="./css/footer.css" />
+    <link rel="stylesheet" type="text/css" href="./css/index.css" />
+  </head>
 
-<body>
-	<header>
-		<div class="container">
-			<div class="row">
-				<div class="col-4">
-					<a class="logo-wrapper">
-						<img src="./assets/logo.png" alt="Logo">
-						<span class="logo-text"><h4>PO With Vinda</h4></span>
-					</a>
-				</div>
+  <body>
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="col-4">
+            <a class="logo-wrapper">
+              <img src="./assets/logo.png" alt="Logo" />
+              <span class="logo-text"><h4>PO With Vinda</h4></span>
+            </a>
+          </div>
 
-				<div class="col-8">
-					<!-- Menu -->
-					<ul class="menu">
-						<li class="menu-item has-dropdown">
-							Product
-							<ul class="dropdown-menu hoverable">
-								<li class="menu-item"><a href="#">Food</a></li>
-								<li class="menu-item"><a href="#">Medicine</a></li>
-							</ul>
-						</li>
-						<li class="menu-item"><a href="#">How To Order</a></li>
-						<li class="menu-item"><a href="#">Testimonial</a></li>
-						<li class="menu-item"><a href="#">About Us</a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</header>
+          <div class="col-8">
+            <!-- Menu -->
+            <ul class="menu">
+              <li class="menu-item has-dropdown">
+                Product
+                <ul class="dropdown-menu hoverable">
+                  <li class="menu-item"><a href="#">Food</a></li>
+                  <li class="menu-item"><a href="#">Medicine</a></li>
+                </ul>
+              </li>
+              <li class="menu-item"><a href="#">How To Order</a></li>
+              <li class="menu-item"><a href="#">Testimonial</a></li>
+              <li class="menu-item"><a href="#">About Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
 
-	<div class="container">
-		
-	</div>
+    <div class="container content-container">
+      <div class="row full-height welcome-message">
+        <div class="col-4"></div>
+        <div class="col-4">
+          <h1>Welcome</h1>
+          <h3>
+            <b>PO with Vinda</b> is a name for pre-order service or shopping
+            entrusted goods service in Indonesia. PO with Vinda is formed in
+            October 29, 2008 and based on Tangerang, Indonesia.
+          </h3>
+          <div class="col-4"></div>
+        </div>
+      </div>
 
-	<footer>
-		<div class="container">
-			<div class="row">
-				Input Feedback
-				<!-- Seend Email -->
-				<input type="text">
-			</div>
+      <div class="row full-height featured-product">
+        <div class="col-12">
+          <div class="row">
+            <div class="col-12">
+              <h1 class="section-title">Loved Products</h1>
+              <span class="section-title-bottom-border"></span>
+            </div>
+          </div>
 
-			<div class="row">
-				&copy; 2019 HAIF Group. All rights reserved.		
-			</div>
-		</div>
-	</footer>
-</body>
+          <div class="row">
+            <div class="col-4 product">
+              <div class="product-image-wrapper">
+                <img
+                  src="./assets/foods/almonds-berries-blackberries-1099680.jpg"
+                  alt="Product"
+                />
+              </div>
+              <div class="product-content">
+                <h3 class="product-name">
+                  Almond Berries
+                </h3>
+                <h5 class="product-price">Rp175.000</h5>
+                <p class="product-description">
+                  This best-ever almond cake recipe has exceptional nutty flavor
+                  and sweetness from the berries that are baked into it.
+                </p>
+              </div>
+            </div>
+            <div class="col-4 product">
+              <div class="product-image-wrapper">
+                <img
+                  src="./assets/medicines/bottle-color-container-414115.jpg"
+                  alt="Product"
+                />
+              </div>
+              <div class="product-content">
+                <h3 class="product-name">
+                  Pure Honey Vitamin C
+                </h3>
+                <h5 class="product-price">Rp99.000</h5>
+                <p class="product-description">
+                  It's a boosted wellness honey - bright energic yellow, vitamin
+                  C packed, and bursting with flavor.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-4 product">
+              <div class="product-image-wrapper">
+                <img
+                  src="./assets/foods/burrito-chicken-close-up-461198.jpg"
+                  alt="Product"
+                />
+              </div>
+              <div class="product-content">
+                <h3 class="product-name">
+                  Burrito Chicken
+                </h3>
+                <h5 class="product-price">Rp517.000</h5>
+                <p class="product-description">
+                  Jamie Oliver shows you how to make burritos from scratch with
+                  this easy chicken burrito recipe. Packed with rice, beans and
+                  veg, it's a proper crowd-pleaser.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row full-height testimonial">
+        <div class="col-12">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <h1 class="section-title">Our Testimonial</h1>
+                <span class="section-title-bottom-border"></span>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-12">
+                <!-- Slider -->
+                TEst
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row full-height enclosement">
+        <div class="col-6">
+          <!-- Payment Method -->
+        </div>
+
+        <div class="col-6">
+          <!-- Shipment and Delivery -->
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-4">
+            <div class="footer-content-container">
+              <div class="row">
+                <div class="col-12">
+                  <a class="logo-wrapper">
+                    <img src="./assets/logo.png" alt="Logo" />
+                    <span class="logo-text"><h4>PO With Vinda</h4></span>
+                  </a>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-12 company-short-description">
+                  <b>PO with Vinda</b> is a name for pre-order service or
+                  shopping entrusted goods service in Indonesia. PO with Vinda
+                  is formed in October 29, 2008 and based on Tangerang,
+                  Indonesia.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-8">
+            <div class="footer-content-container">
+              <div class="row top-product-row">
+                <div class="col-6 content">
+                  <h2>Top Food</h2>
+                  <div class="top-product">
+                    <div class="image-wrapper">
+                      <img
+                        src="./assets/foods/almonds-berries-blackberries-1099680.jpg"
+                        alt="Almond Berries"
+                      />
+                    </div>
+                    <div class="description">
+                      <p>Almond Berries</p>
+                      <b>Rp175.000</b>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 content">
+                  <h2>Top Medicine</h2>
+                  <div class="top-product">
+                    <div class="image-wrapper">
+                      <img
+                        src="./assets/medicines/bottle-color-container-414115.jpg"
+                        alt="Almond Berries"
+                      />
+                    </div>
+                    <div class="description">
+                      <p>Pure Honey Vitamin C</p>
+                      <b>Rp99.000</b>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="copyright-row">
+        &copy; 2019 HAIF Group. All rights reserved.
+      </div>
+    </footer>
+  </body>
 </html>

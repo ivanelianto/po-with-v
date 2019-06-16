@@ -1,0 +1,120 @@
+.logo-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.logo-wrapper img {
+  width: 50px;
+  height: 50px;
+}
+
+.logo-wrapper .logo-text {
+  margin-left: 1em;
+}
+
+.logo-wrapper .logo-text h4 {
+  font-family: Pacifico;
+  font-size: 1.5rem;
+  background: -webkit-linear-gradient(70deg, #2d8d9d, #80ECFF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+footer {
+  background-color: #202020;
+  color: #fff;
+  padding-top: 1em;
+}
+
+footer .container:first-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .container:first-child .footer-content-container {
+  min-height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .company-short-description {
+  line-height: 1.5em;
+  text-align: justify;
+}
+
+footer .top-product-row {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .content h2 {
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+footer .content .top-product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 125px;
+  width: 100%;
+}
+
+footer .content .top-product .image-wrapper {
+  margin-right: 1em;
+  overflow: hidden;
+}
+
+footer .content .top-product .image-wrapper img {
+  width: 175px;
+  height: 100%;
+}
+
+footer .content .top-product .description {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  line-height: 1.5em;
+}
+
+footer .copyright-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 0;
+  padding: 1em;
+  border-top: 1px solid #333;
+}
+/*# sourceMappingURL=footer.css.map */

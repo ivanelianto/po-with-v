@@ -1,0 +1,47 @@
+/**
+ * Info :
+ * Container Max Width : 1200px;
+ * Gutter : .5rem; (Dikali 2 Bearti 1rem)
+ * 
+ * Kalau Mau Ubah Value Di Gutter, Tolong Pakai SASS Compiler Ubahnya
+ * Biar Ngak Nguli 
+ * - by Ivan
+ */
+
+$mobile-breakpoint: 600px;
+$gutter: .5em;
+
+ .container {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1200px;
+	padding: 0 2rem;
+}
+
+.row {
+	display: flex;
+  flex-flow: row wrap;
+  margin-bottom: 1em;
+  width: 100%;
+}
+
+[class*="col-"] {
+	padding: 0 .5rem;
+}
+
+@for $i from 1 to 13 {
+  .col-#{$i} { width: calc(#{$i} / 12 * 100% - #{$gutter} * 2); }
+}
+
+@media only screen and (max-width: $mobile-breakpoint)
+{
+  .container { max-width: none; }
+
+  @for $i from 1 to 7 { 
+    .col-#{$i} { width: calc(#{$i} / 6 * 100% - #{$gutter} * 2); }
+  }
+
+  @for $i from 7 to 13 {
+    .col-#{$i} { width: 100%; }
+  }
+}

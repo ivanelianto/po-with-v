@@ -1,0 +1,68 @@
+@import "logo";
+
+footer {
+  background-color: #202020;
+  color: #fff;
+  padding-top: 1em;
+
+  .container:first-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .footer-content-container {
+      min-height: 300px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+
+  .company-short-description {
+    line-height: 1.5em;
+    text-align: justify;
+  }
+
+  .top-product-row {
+    justify-content: center;
+  }
+
+  .content {
+    h2 {
+      text-align: center;
+      margin-bottom: 1em;
+    }
+
+    .top-product {
+      display: flex;
+      height: 125px;
+      width: 100%;
+
+      .image-wrapper {
+        margin-right: 1em;
+        overflow: hidden;
+
+        img {
+          width: 175px;
+          height: 100%;
+        }
+      }
+
+      .description {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        line-height: 1.5em;
+      }
+    }
+  }
+
+  .copyright-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+    padding: 1em;
+    border-top: 1px solid #333;
+  }
+}
