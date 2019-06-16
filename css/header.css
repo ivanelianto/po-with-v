@@ -1,64 +1,111 @@
-.menu
-{   
-    display: flex;
-    align-items: center;
+@import url("https://fonts.googleapis.com/css?family=Pacifico&display=swap");
+header {
+  background-color: #fff;
+  padding: 1em 0em;
+  -webkit-box-shadow: 0 0 1em #ddd;
+          box-shadow: 0 0 1em #ddd;
 }
 
-.menu .has-dropdown
-{
-    position: relative;
+header .container .row {
+  margin-bottom: 0;
 }
 
-.menu .has-dropdown ul
-{
-    position: absolute;
-    top: 100%;
-    left: 0;
-    display: none;
+/* Start Logo Section */
+.logo-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.menu .has-dropdown ul .menu-item
-{
-    justify-content: flex-start;
+.logo-wrapper img {
+  width: 50px;
+  height: 50px;
 }
 
-.menu .has-dropdown:hover .hoverable
-{
-    display: block;
+.logo-wrapper .logo-text {
+  margin-left: 1em;
 }
 
-.menu-item
-{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 1em;
-    width: 10em;
+.logo-wrapper .logo-text h4 {
+  font-family: Pacifico;
+  font-size: 1.5rem;
+  background: -webkit-linear-gradient(70deg, #2d8d9d, #80ECFF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-.menu-item:not(:last-child)
-{
-    margin-right: 1em;
+/* End Logo Section */
+/* Start Menu Section */
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.menu-item a
-{
-    height: 100%;
-    display: flex;
-    align-items: center;
+.menu .has-dropdown {
+  position: relative;
 }
 
-.menu-item:hover
-{
-    background-color: #ff0;
+.menu .has-dropdown ul {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+  -webkit-box-shadow: 0 0.5em 1em #ddd;
+          box-shadow: 0 0.5em 1em #ddd;
+  min-width: 10em;
+  z-index: 1;
 }
 
-.dropdown-menu
-{
-
+.menu .has-dropdown ul .menu-item {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 100%;
 }
 
-.dropdown-menu .hoverable
-{
-
+.menu .has-dropdown:hover .hoverable {
+  display: block;
 }
+
+.menu .menu-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1em;
+  background-color: #fff;
+  color: #2d8d9d;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.menu .menu-item:not(:last-child) {
+  margin-right: 1em;
+}
+
+.menu .menu-item:hover {
+  color: #FFAB66;
+  cursor: pointer;
+}
+
+.menu .menu-item a {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* End Menu Section */
+/*# sourceMappingURL=header.css.map */
