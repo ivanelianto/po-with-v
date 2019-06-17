@@ -18,7 +18,7 @@
 }
 
 .logo-wrapper .logo-text h4 {
-  font-family: Pacifico;
+  font-family: Pacifico, sans-serif, Arial;
   font-size: 1.5rem;
   background: -webkit-linear-gradient(70deg, #2d8d9d, #80ECFF);
   -webkit-background-clip: text;

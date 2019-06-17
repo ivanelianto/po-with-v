@@ -17,7 +17,7 @@
 }
 
 .logo-wrapper .logo-text h4 {
-  font-family: Pacifico;
+  font-family: Pacifico, sans-serif, Arial;
   font-size: 1.5rem;
   background: -webkit-linear-gradient(70deg, #2d8d9d, #80ECFF);
   -webkit-background-clip: text;
@@ -26,7 +26,6 @@
 
 footer {
   background-color: #202020;
-  color: #fff;
   padding-top: 1em;
 }
 
@@ -62,6 +61,10 @@ footer .company-short-description {
   text-align: justify;
 }
 
+footer .company-short-description, footer .company-short-description * {
+  color: #f8f8f8;
+}
+
 footer .top-product-row {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -71,6 +74,7 @@ footer .top-product-row {
 footer .content h2 {
   text-align: center;
   margin-bottom: 1em;
+  color: #f8f8f8;
 }
 
 footer .content .top-product {
@@ -103,6 +107,10 @@ footer .content .top-product .description {
   line-height: 1.5em;
 }
 
+footer .content .top-product .description * {
+  color: #f8f8f8;
+}
+
 footer .copyright-row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -116,5 +124,6 @@ footer .copyright-row {
   margin-bottom: 0;
   padding: 1em;
   border-top: 1px solid #333;
+  color: #f8f8f8;
 }
 /*# sourceMappingURL=footer.css.map */

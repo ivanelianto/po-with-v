@@ -2,7 +2,6 @@
 
 footer {
   background-color: #202020;
-  color: #fff;
   padding-top: 1em;
 
   .container:first-child {
@@ -21,6 +20,8 @@ footer {
   .company-short-description {
     line-height: 1.5em;
     text-align: justify;
+
+    &, * { color: $light-gray; }
   }
 
   .top-product-row {
@@ -31,6 +32,7 @@ footer {
     h2 {
       text-align: center;
       margin-bottom: 1em;
+      color: $light-gray;
     }
 
     .top-product {
@@ -53,6 +55,8 @@ footer {
         display: flex;
         flex-direction: column;
         line-height: 1.5em;
+        
+        * { color: $light-gray; }
       }
     }
   }
@@ -64,5 +68,6 @@ footer {
     margin-bottom: 0;
     padding: 1em;
     border-top: 1px solid #333;
+    color: $light-gray;
   }
 }

@@ -60,28 +60,29 @@
       }
 
       .product-content {
-        visibility: hidden;
         opacity: 0;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         transition: all .2s linear;
-        color: $accent-text;
 
         .product-name {
           margin-bottom: .25em;
           font-weight: normal;
+          color: $accent-text;
         }
 
         .product-price {
           margin-bottom: 1em;
           font-weight: bold;
+          color: $accent-text;
         }
 
         .product-description {
           padding: 0 1em;
           text-align: justify;
+          color: $accent-text;
         }
       }
 
@@ -94,13 +95,38 @@
         }
 
         .product-content { 
-          visibility: visible;
           opacity: 1;
         }
       }
 
       &:not(:last-child) {
         margin-right: 1em;
+      }
+    }
+  }
+
+  .enclosement {
+    .enclosement-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 75vh;
+      background-color: $light-gray;
+
+      .icon {
+        width: 65px;
+        height: 65px;
+      }
+
+      .title {
+        margin-top: 1em;
+        margin-bottom: 1em;
+      }
+
+      .enclosement-item-description {
+        width: 75%;
+        text-align: center;
       }
     }
   }
