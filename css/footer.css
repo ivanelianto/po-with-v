@@ -62,7 +62,7 @@ footer .company-short-description {
 }
 
 footer .company-short-description, footer .company-short-description * {
-  color: #f8f8f8;
+  color: #f2f2f2;
 }
 
 footer .top-product-row {
@@ -74,7 +74,7 @@ footer .top-product-row {
 footer .content h2 {
   text-align: center;
   margin-bottom: 1em;
-  color: #f8f8f8;
+  color: #f2f2f2;
 }
 
 footer .content .top-product {
@@ -108,7 +108,7 @@ footer .content .top-product .description {
 }
 
 footer .content .top-product .description * {
-  color: #f8f8f8;
+  color: #f2f2f2;
 }
 
 footer .copyright-row {
@@ -124,6 +124,6 @@ footer .copyright-row {
   margin-bottom: 0;
   padding: 1em;
   border-top: 1px solid #333;
-  color: #f8f8f8;
+  color: #f2f2f2;
 }
 /*# sourceMappingURL=footer.css.map */

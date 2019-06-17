@@ -7,7 +7,7 @@
   justify-content: center;
 
   .full-height {
-    min-height: 100vh;
+    min-height: calc(100vh - 83px);
   }
 
   .welcome-message {
@@ -15,11 +15,11 @@
     align-items: center;
     line-height: 1.75em;
 
-    h1 { 
+    h1 {
       text-align: center;
-      margin-bottom: .5em;
+      margin-bottom: 0.5em;
     }
-    h3 { 
+    h3 {
       text-align: center;
       font-weight: normal;
     }
@@ -52,10 +52,10 @@
         height: 100%;
         overflow: hidden;
 
-        img { 
+        img {
           width: 100%;
           height: 100%;
-          transition: all .2s ease-in-out;
+          transition: all 0.2s ease-in-out;
         }
       }
 
@@ -65,10 +65,10 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        transition: all .2s linear;
+        transition: all 0.2s linear;
 
         .product-name {
-          margin-bottom: .25em;
+          margin-bottom: 0.25em;
           font-weight: normal;
           color: $accent-text;
         }
@@ -90,11 +90,11 @@
         .product-image-wrapper {
           img {
             transform: scale(1.2);
-            filter: brightness(.35);
+            filter: brightness(0.35);
           }
         }
 
-        .product-content { 
+        .product-content {
           opacity: 1;
         }
       }
@@ -103,6 +103,81 @@
         margin-right: 1em;
       }
     }
+  }
+
+  .testimonial {
+    .slider-container {
+      z-index: 0;
+    }
+
+    .slick-track {
+      padding: 1em 0;
+    }
+    
+    .attestant-review {
+      height: 355px;
+      border-radius: 5px;
+      padding: 1em;
+      margin: 0 1.5em;
+      box-shadow: 0 0 1em $gray;
+    }
+
+    .attestant-image-container {
+      display: flex;
+      justify-content: center;
+    }
+
+    .attestant-image-wrapper {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      overflow: hidden;
+
+      img { 
+        object-fit: cover;
+        width: 100%;
+        min-height: 150px;
+      }
+    }
+
+    .attestant-review-content {
+      padding-top: 10px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .attestant-short-profile {
+      font-size: .9rem;
+      margin-top: .25em;
+    }
+
+    .attestant-review-text {
+      font-style: italic;
+      margin-top: 1em;
+      overflow: hidden;
+      height: 100px;
+      line-height: 1.35em;
+      font-size: .95rem;
+      text-overflow: hidden;
+    }
+
+    .slick-prev::before, .slick-next::before {
+      color: $primary-background;
+    }
+
+    // .slick-arrow {
+    //   background-color: $accent-background;
+    // }
+    
+    // .slick-prev, .slick-next {
+    //   box-shadow: 0 8px 16px $gray;
+    //   z-index: 2;
+    //   width: 35px;
+    //   height: 35px;
+    //   border-radius: 50%;
+    // }
   }
 
   .enclosement {

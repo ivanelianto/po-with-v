@@ -15,7 +15,7 @@
 }
 
 .content-container .full-height {
-  min-height: 100vh;
+  min-height: calc(100vh - 83px);
 }
 
 .content-container .welcome-message {
@@ -30,7 +30,7 @@
 
 .content-container .welcome-message h1 {
   text-align: center;
-  margin-bottom: .5em;
+  margin-bottom: 0.5em;
 }
 
 .content-container .welcome-message h3 {
@@ -71,8 +71,8 @@
 .content-container .featured-product .product .product-image-wrapper img {
   width: 100%;
   height: 100%;
-  -webkit-transition: all .2s ease-in-out;
-  transition: all .2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .content-container .featured-product .product .product-content {
@@ -90,12 +90,12 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-transition: all .2s linear;
-  transition: all .2s linear;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
 }
 
 .content-container .featured-product .product .product-content .product-name {
-  margin-bottom: .25em;
+  margin-bottom: 0.25em;
   font-weight: normal;
   color: #facf80;
 }
@@ -127,6 +127,80 @@
   margin-right: 1em;
 }
 
+.content-container .testimonial .slider-container {
+  z-index: 0;
+}
+
+.content-container .testimonial .slick-track {
+  padding: 1em 0;
+}
+
+.content-container .testimonial .attestant-review {
+  height: 355px;
+  border-radius: 5px;
+  padding: 1em;
+  margin: 0 1.5em;
+  -webkit-box-shadow: 0 0 1em #ddd;
+          box-shadow: 0 0 1em #ddd;
+}
+
+.content-container .testimonial .attestant-image-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.content-container .testimonial .attestant-image-wrapper {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.content-container .testimonial .attestant-image-wrapper img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  min-height: 150px;
+}
+
+.content-container .testimonial .attestant-review-content {
+  padding-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.content-container .testimonial .attestant-short-profile {
+  font-size: .9rem;
+  margin-top: .25em;
+}
+
+.content-container .testimonial .attestant-review-text {
+  font-style: italic;
+  margin-top: 1em;
+  overflow: hidden;
+  height: 100px;
+  line-height: 1.35em;
+  font-size: .95rem;
+  text-overflow: hidden;
+}
+
+.content-container .testimonial .slick-prev::before, .content-container .testimonial .slick-next::before {
+  color: #2d8d9d;
+}
+
 .content-container .enclosement .enclosement-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -142,7 +216,7 @@
       -ms-flex-pack: center;
           justify-content: center;
   height: 75vh;
-  background-color: #f8f8f8;
+  background-color: #f2f2f2;
 }
 
 .content-container .enclosement .enclosement-content .icon {
