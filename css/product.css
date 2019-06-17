@@ -79,13 +79,13 @@
 }
 
 .product-row .product-card .product-content .action-button-wrapper .action-button:not(:last-child) {
-  margin-right: .5em;
+  margin-right: 0.5em;
 }
 
 .product-row .product-card .product-content .action-button-wrapper .action-button .icon-wrapper {
   width: 42px;
   height: 42px;
-  padding: .75em;
+  padding: 0.75em;
   border-radius: 50%;
   display: -webkit-box;
   display: -ms-flexbox;

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
   <head>
     <title>Testimonial</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="./css/grid.css" />
     <link rel="stylesheet" type="text/css" href="./css/header.css" />
     <link rel="stylesheet" type="text/css" href="./css/footer.css" />
-    <link rel="stylesheet" type="text/css" href="./css/index.css" />
+    <link rel="stylesheet" type="text/css" href="./css/testimonial.css" />
   </head>
 
   <body>
@@ -55,7 +54,158 @@
     </header>
 
     <div class="container content-container">
-      <!-- Main Content -->
+      <div class="row">
+        <div class="col-12">
+          <h1 class="section-title">Our Testimonials</h1>
+          <span class="section-title-bottom-border"></span>
+        </div>
+      </div>
+
+      <div class="row testimonial-row">
+        <div class="col-4">
+          <div class="profile-card">
+            <div class="image-wrapper">
+              <img
+                src="./assets/girls/beautiful-beauty-blurred-background-1391498.jpg"
+                alt="Image"
+              />
+            </div>
+
+            <h3 class="name">Kailyn Monroe</h3>
+            <h4 class="short-profile">Student at Binus University</h4>
+            <p class="review-text">
+              I am one of the most loyal customer of this service. There are
+              many reasons of why, but I prefer not to tell some jerks like you
+              guys.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-4">
+          <div class="profile-card">
+            <div class="image-wrapper">
+              <img
+                src="./assets/boys/adult-beard-city-211050.jpg"
+                alt="Image"
+              />
+            </div>
+
+            <h3 class="name">Abdul Ariel</h3>
+            <h4 class="short-profile">Your Flight Attendant</h4>
+            <p class="review-text">
+              I don't have many times since I fly airplanes, but with Vinda's
+              PO, today I can buy all my needs without any worries.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-4">
+          <div class="profile-card">
+            <div class="image-wrapper">
+              <img
+                src="./assets/girls/beautiful-bloom-blossom-1406764.jpg"
+                alt="Image"
+              />
+            </div>
+
+            <h3 class="name">Paulina Eva</h3>
+            <h4 class="short-profile">Author of Rain and Flower</h4>
+            <p class="review-text">
+              Every goods I ordered from PO With Vinda are always in good
+              conditions, different with other POs.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-4">
+          <div class="profile-card">
+            <div class="image-wrapper">
+              <img src="./assets/boys/adult-beard-boy-220453.jpg" alt="Image" />
+            </div>
+
+            <h3 class="name">Anthony Arron</h3>
+            <h4 class="short-profile">SukaRibut's Senior Criminal</h4>
+            <p class="review-text">
+              It is reachable from literally anywhere, including the prison
+              cell. The lockpicker sent to here could pass through all prison
+              guards.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-4">
+          <div class="profile-card">
+            <div class="image-wrapper">
+              <img
+                src="./assets/girls/baskets-blurred-background-cute-1386608.jpg"
+                alt="Image"
+              />
+            </div>
+
+            <h3 class="name">Giselle Alison</h3>
+            <h4 class="short-profile">Babysitter</h4>
+            <p class="review-text">
+              Babysitting is pain in ass, but with this PO service, I can order
+              my goods anywhere easily without any difficulties.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row input-testimonial-row">
+        <div class="col-12">
+          <h1 class="section-title">Input Your Testimonial</h1>
+          <span class="section-title-bottom-border"></span>
+
+          <form id="testimonialForm">
+            <div class="form-group">
+              <div class="input-wrapper">
+                <input type="text" id="name" placeholder="Name"/>
+              </div>
+              <label class="input-title" for="name">Name</label>
+            </div>
+
+            <div class="form-group">
+              <div class="input-wrapper">
+                <input type="text" id="title" placeholder="Title" />
+              </div>
+              <label class="input-title" for="title">Title</label>
+            </div>
+
+            <div class="form-group">
+              <div class="input-wrapper radio-type">
+                <div class="radio-wrapper">
+                  <input type="radio" name="gender" id="male" value="male" />
+                  <label for="male">Male</label>
+                </div>
+                <div class="radio-wrapper">
+                  <input type="radio" name="gender" id="female" value="female"/>
+                  <label for="female">Female</label>
+                </div>
+              </div>
+              <label class="input-title">Gender</label>
+            </div>
+
+            <div class="form-group">
+              <div class="input-wrapper">
+                <textarea id="address" cols="30" rows="3"></textarea>
+              </div>
+              <label for="address" class="input-title">Address</label>
+            </div>
+
+            <div class="form-group">
+              <div class="input-wrapper">
+                <textarea id="review" cols="30" rows="3"></textarea>
+              </div>
+              <label for="review" class="input-title">Review</label>
+            </div>
+
+            <div class="form-group">
+              <button class="btn btn-primary">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
     </div>
 
     <footer>
@@ -76,8 +226,10 @@
 
               <div class="row">
                 <div class="col-12 company-short-description">
-                  <b>PO with Vinda</b> is a name for pre-order service or shopping entrusted goods service in Indonesia. PO
-                  with Vinda is formed in October 29, 2008 and based on Tangerang, Indonesia.
+                  <b>PO with Vinda</b> is a name for pre-order service or
+                  shopping entrusted goods service in Indonesia. PO with Vinda
+                  is formed in October 29, 2008 and based on Tangerang,
+                  Indonesia.
                 </div>
               </div>
             </div>
@@ -90,7 +242,10 @@
                   <h2>Top Food</h2>
                   <div class="top-product">
                     <div class="image-wrapper">
-                      <img src="./assets/foods/almond-berries.jpg" alt="Almond Berries" />
+                      <img
+                        src="./assets/foods/almond-berries.jpg"
+                        alt="Almond Berries"
+                      />
                     </div>
                     <div class="description">
                       <p>Almond Berries</p>
@@ -102,7 +257,10 @@
                   <h2>Top Medicine</h2>
                   <div class="top-product">
                     <div class="image-wrapper">
-                      <img src="./assets/medicines/bottle-color-container-414115.jpg" alt="Almond Berries" />
+                      <img
+                        src="./assets/medicines/bottle-color-container-414115.jpg"
+                        alt="Almond Berries"
+                      />
                     </div>
                     <div class="description">
                       <p>Pure Honey Vitamin C</p>
@@ -122,4 +280,6 @@
     </footer>
   </body>
 
+  <script src="./js/jquery-3.4.1.min.js"></script>
+  <script src="./js/testimonial.js"></script>
 </html>

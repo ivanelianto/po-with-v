@@ -1,0 +1,64 @@
+@import "color";
+
+.form-group {
+  position: relative;
+  margin-bottom: 1.5em;
+  transition: all 0.2s linear;
+  
+  &:focus-within {
+    .input-wrapper {
+      border: 2px solid $accent-background;
+    }
+
+    .input-title {
+      font-size: .8rem;
+      top: -.5em;
+      left: .75em;
+      font-weight: bold;
+      color: $accent-background;
+    }
+  }
+
+  input[type="text"],
+  textarea {
+    width: 100%;
+    padding: 1em 1.25em;
+    border: 0;
+    border-radius: 5px;
+    outline: 0;
+    font-size: 1rem;
+  }
+
+  .input-wrapper {
+    border-radius: 5px;
+    border: 1px solid $primary-background;
+    transition: all 0.2s linear;
+
+    &.radio-type {
+      display: flex;
+      padding: 1em 1.25em;
+
+      & ~ .input-title {
+        top: -.75em;
+      }
+
+      .radio-wrapper {
+        min-width: 100px;
+
+        label {
+          color: $primary-background;
+        }
+      }
+    }
+  }
+
+  .input-title {
+    position: absolute;
+    top: 1em;
+    left: 1em;
+    padding: 0 .5em;
+    background-color: #fff;
+    transition: all .1s linear;
+    color: $primary-background;
+  }
+}
