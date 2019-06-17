@@ -1,0 +1,53 @@
+.content-container .row:first-child {
+  margin-top: 3em;
+}
+
+.section-title {
+  font-weight: bolder;
+}
+
+.section-title.page-section-title {
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.section-title-bottom-border {
+  display: block;
+  background: linear-gradient(70deg, #2d8d9d, #80ECFF);
+  width: 5em;
+  height: 5px;
+  margin: 1em 0;
+}
+
+.steps-row .col-8 {
+  margin-bottom: 2em;
+}
+
+.steps-row .col-8:nth-child(2n - 1) {
+  text-align: right;
+  position: relative;
+}
+
+.steps-row .col-8:nth-child(2n - 1) .section-title-bottom-border {
+  position: relative;
+  left: 90%;
+  display: block;
+  background: linear-gradient(70deg, #2d8d9d, #80ECFF);
+  width: 5em;
+  height: 5px;
+  margin: 1em 0;
+}
+
+.steps-row .section-title {
+  font-weight: bolder;
+  font-size: 1.5rem;
+}
+
+.steps-row .section-title-bottom-border {
+  display: block;
+  background: linear-gradient(70deg, #2d8d9d, #80ECFF);
+  width: 5em;
+  height: 5px;
+  margin: 1em 0;
+}
+/*# sourceMappingURL=tutorial.css.map */
